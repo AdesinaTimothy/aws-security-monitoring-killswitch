@@ -1,0 +1,14 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowDetachFromVictimOnly",
+            "Effect": "Allow",
+            "Action": [
+                "iam:ListAttachedUserPolicies",
+                "iam:DetachUserPolicy"
+            ],
+            "Resource": "arn:aws:iam::<ACCOUNT_ID>:user/victim-user"
+        }
+    ]
+}
